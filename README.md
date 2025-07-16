@@ -5,4 +5,4 @@ As smart grids expand with rising electricity demand, securing fine-grained cons
 <img src="https://github.com/Raja-719/Smart-Meter-Data-Sharing-For-AI-Enhanced-Energy-System-/blob/main/Images/Detailed%20System%20Architecture%20Diagram.png"/>
 
 # Data Encryption and Storage Workflow 
-<img src="https://github.com/Raja-719/Smart-Meter-Data-Sharing-For-AI-Enhanced-Energy-System-/blob/main/Images/Data%20Encryption%20and%20Storage%20Workflow.png"/>
+<img src=""/>
