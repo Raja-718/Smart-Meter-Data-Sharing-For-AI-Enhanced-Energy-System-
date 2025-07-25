@@ -22,3 +22,11 @@ It balances speed (AES), secure key exchange (RSA), and integrity verification (
 
 ## System Architecture (Smart Meter Data to Global Model)
 <img src="https://github.com/Raja-719/Smart-Meter-Data-Sharing-For-AI-Enhanced-Energy-System-/blob/main/Images/System%20Architecture%20(Smart%20Meter%20Data%20to%20Global%20Model).png"/>
+
+Illustrates the end-to-end secure federated learning pipeline for smart meter data analytics.
+Raw readings from smart meters are processed at edge devices, where they are encrypted using AES-256-CFB and the key is wrapped using RSA-OAEP.
+Encrypted data is then sent to cloud storage for decryption and regional organization, while a tamper-evident hash chain is built in a blockchain-inspired log.
+Decrypted region-wise data is locally trained on TinyNet models through Flower clients, preserving data privacy.
+The trained weights are securely aggregated via FedAvg on the Flower server to form a global model.
+This architecture ensures data confidentiality, tamper detection, and distributed learning without centralized data pooling.
+Performance, security, and usability tests confirm the pipeline's scalability, robustness, and real-world deployment feasibility in smart grid environments.
