@@ -16,6 +16,67 @@ The system further integrates **federated learning** and **blockchain-inspired h
 
 ---
 
+
+
+## 📊 Dataset Details
+
+This project utilizes a **privacy-conscious smart meter billing dataset** that mirrors electricity consumption behavior across various regions and consumer categories. The dataset is structured to support encryption modeling, federated learning, tamper-proof logging, and privacy-preserving search under realistic smart grid conditions.
+
+---
+
+### 📁 Dataset File
+
+| Detail            | Description                           |
+|-------------------|---------------------------------------|
+| 🗂️ **Filename**   | `Electricity_bill_1k.csv`             |
+| 📄 **Format**     | CSV (Comma-Separated Values)          |
+| 🔢 **Records**    | 10,000+ (Synthetic + Small Real Sample)|
+| 🏗️ **Use Case**   | Encryption, Federated Learning, Search, Tamper Logging |
+
+---
+
+### 🧾 Column Descriptions
+
+| 🏷️ Column Name     | 🔍 Description                                           |
+|---------------------|----------------------------------------------------------|
+| 👤 Name             | Customer’s full name (anonymized/synthetic)              |
+| 🏠 Address          | Customer billing address                                 |
+| 🆔 Account ID       | Unique account identifier                                |
+| 📞 Phone No.        | Customer's phone number (AES encrypted, if used)         |
+| ⚡ Meter No.        | Unique smart meter ID                                     |
+| 📅 Date             | Billing date (`YYYY-MM-DD`)                              |
+| ⏰ Time             | Time of reading or billing generation                     |
+| 🧾 Bill No.         | Unique bill number                                        |
+| 📈 Max Demand       | Peak demand during the billing cycle                      |
+| 🔁 Previous Unit    | Meter reading at start of billing period                  |
+| 🔄 Present Unit     | Meter reading at end of billing period                    |
+| 🔢 Billed Unit      | Consumption = Present − Previous                          |
+| 📆 Due Date         | Final bill payment due date                               |
+| 💰 Total Due        | Total amount to be paid                                   |
+| ⚙️ Sanctioned Load  | Approved load capacity for the consumer                   |
+| 🧾 Fixed Amount     | Flat billing charges regardless of usage                  |
+| 🏷️ Category         | Consumer type (Domestic, Commercial, Industrial, etc.)    |
+
+---
+
+### 📊 Data Characteristics
+
+- 📌 **Includes real + synthetic data** to simulate smart grid scale and diversity  
+- 🔐 **Sensitive fields encrypted** using AES and RSA for privacy  
+- 📦 **SHA-256 hashing** applied to ensure tamper-evident storage  
+- 🕵️‍♂️ **Search enabled** through SHA-256 token-based indexing  
+- 🤖 **Used in federated learning** with PyTorch TinyNet + Flower framework  
+
+---
+
+### 🛡️ Privacy & Ethics
+
+- 🔒 No real Personally Identifiable Information (PII) is exposed  
+- 🧬 Synthetic data generation ensures ethical, privacy-compliant usage  
+- ✅ Aligned with **GDPR principles** and modern data protection standards  
+
+
+
 ## 🧱 Architecture Diagrams
 
 ### 🔹 Detailed System Architecture
@@ -92,7 +153,51 @@ Performance, security, and usability tests confirm the pipeline's scalability, r
 | ![Datetime](https://img.shields.io/badge/Datetime%20&%20OS-Logs%20%26%20File%20Handling-lightblue?logo=clockify) | Manages timestamps, file access, and system utilities |
 
 
+## 📊 Results & Evaluation
 
+This section summarizes the performance and effectiveness of the proposed secure smart meter data system, including encryption validation, tamper-evident logging, federated learning results, and search functionality.
+
+---
+
+### ✅ Encryption & Secure Storage
+
+- 🔐 **AES (CFB mode)** + **RSA (OAEP)** successfully encrypts billing records and session keys.
+- 🧩 **SHA-256** hashes ensure integrity; any tampering leads to immediate detection.
+- 🧾 **Blockchain-inspired logs** maintain traceable, tamper-evident records for auditability.
+- ⚡ Tested on Raspberry Pi–class hardware with average encryption time under **15 ms per record**.
+
+---
+
+### 🔎 Searchable Record Retrieval
+
+- 🔍 Users can retrieve encrypted records using:
+  - 📅 **Single Date** query (e.g., `2021-03-15`)
+  - 📆 **Date Range** query (e.g., `2021-03-15 to 2021-03-17`)
+- 🔓 Retrieved data is **decrypted securely** using RSA and AES keys.
+- ✔️ Integrity of the record is verified by comparing hashes from storage and blockchain logs.
+
+---
+
+### 💡 Sample Decrypted Record Output
+
+```json
+✅ Decrypted Record:
+{
+  "meter_id": "12289508",
+  "timestamp": "2021-03-15T19:30:45",
+  "billed_units": 419,
+  "total_due": 3662,
+  "region": "Commercial"
+}
+
+📜 Blockchain Log Entry:
+{
+  "entry": {
+    "meter_id": "12289508",
+    "timestamp": "2021-03-15T19:30:45"
+  },
+  "hash": "a90c62fb98d095d741250febe8135af4db526bfd972032b283fa211c4ea005c2"
+}
 
 
 
