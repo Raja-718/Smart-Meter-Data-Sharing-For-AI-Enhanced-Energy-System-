@@ -178,29 +178,66 @@ This section summarizes the performance and effectiveness of the proposed secure
 
 ---
 
-### 💡 Sample Decrypted Record Output
+## 💡 Sample Decrypted Record Output
 
-```json
-✅ Decrypted Record:
-{
-  "meter_id": "12289508",
-  "timestamp": "2021-03-15T19:30:45",
-  "billed_units": 419,
-  "total_due": 3662,
-  "region": "Commercial"
-}
 
-📜 Blockchain Log Entry:
-{
-  "entry": {
-    "meter_id": "12289508",
-    "timestamp": "2021-03-15T19:30:45"
-  },
-  "hash": "a90c62fb98d095d741250febe8135af4db526bfd972032b283fa211c4ea005c2"
-}
+## Demonstration: Search, Decryption, and Audit Logging
+
+![Demonstration](https://github.com/Raja-718/Smart-Meter-Data-Sharing-For-AI-Enhanced-Energy-System-/raw/main/Images/Demonstrating%20Search%2C%20Decryption%2C%20and%20Audit%20Logging.png)
+
+
+
+## 🤖 Federated Learning Performance
+
+Federated training was conducted using region-wise smart meter data frames with **Flower** for orchestration, **TinyNet** for lightweight modeling, and **FedAvg** for secure aggregation. This setup enabled **privacy-preserving learning** across distributed edge devices without centralizing raw data.
+
 ---
 
+### 📉 Federated Training Loss over Rounds
 
+![Federated Training Loss](https://github.com/Raja-718/Smart-Meter-Data-Sharing-For-AI-Enhanced-Energy-System-/raw/main/Images/Federated%20Training%20Loss%20over%20Rounds.png)
+
+🔹 **Description**: Training loss steadily declined over multiple communication rounds, indicating that the global model effectively learned from decentralized, encrypted smart meter data.
+
+---
+
+### 📈 Federated Training Accuracy over Rounds
+
+![Federated Training Accuracy](https://github.com/Raja-718/Smart-Meter-Data-Sharing-For-AI-Enhanced-Energy-System-/raw/main/Images/Federated%20Training%20Accuracy%20Over%20Rounds.png)
+
+🔹 **Description**: Model accuracy consistently improved across training rounds, reaching **80% by round 3**, validating the effectiveness of secure and collaborative learning without compromising privacy.
+
+---
+
+### 📊 Precision, Recall & F1-Score Across Rounds
+
+![Evaluation Metrics](https://github.com/Raja-718/Smart-Meter-Data-Sharing-For-AI-Enhanced-Energy-System-/raw/main/Images/Federated%20Learning%20Precision%2C%20Recall%2C%20and%20F1-Score%20Across%20Rounds.png)
+
+🔹 **Description**: Evaluation metrics (Precision, Recall, F1-Score) show a positive trend across all rounds, confirming improved generalization and classification quality of the federated model.
+
+---
+
+### 🎯 Summary of Key Metrics
+
+| Metric       | Round 1 | Round 2 | Round 3 |
+|--------------|---------|---------|---------|
+| 🎯 Precision   | 0.70    | 0.75    | 0.77    |
+| 🔁 Recall      | 0.68    | 0.74    | 0.76    |
+| 🧮 F1-Score    | 0.69    | 0.745   | 0.765   |
+| ✅ Accuracy    | 0.74    | 0.78    | 0.80    |
+| 📉 Loss        | 0.0859  | 0.0840  | 0.0835  |
+
+---
+
+### 🔐 Security Validation
+
+- 🔑 **Multi-level Encryption**: Only authorized users can decrypt data using AES + RSA hybrid encryption.
+- 📜 **Blockchain-Inspired Logging**: Tamper-evident logs are created using hash chaining.
+- ✅ **Hash Integrity Checks**: Every record is validated with SHA-256 before processing or visualization.
+
+---
+
+This federated learning framework demonstrates a secure, decentralized, and ethically grounded approach to smart grid AI — combining **robust cryptographic safeguards** with **scalable, real-time machine learning performance**.
 
 
 
