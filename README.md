@@ -241,3 +241,48 @@ This federated learning framework demonstrates a secure, decentralized, and ethi
 
 
 
+
+
+## 🔮 Future Work
+
+While this system already secures and preserves privacy in smart meter data pipelines, several impactful enhancements can be explored in future releases:
+
+---
+
+### 🚀 Scalable Federated Aggregation  
+Enhance global model accuracy and robustness by integrating advanced aggregation techniques such as **FedProx**, **SecureBoost**, or **FedNova**, especially in heterogeneous edge environments.
+
+---
+
+### 🧠 Edge Intelligence  
+Incorporate lightweight on-device models using **TinyML** or **EdgeTPU** to enable real-time inference and decentralized analytics directly at smart meters.
+
+---
+
+### 🔄 Real-Time Anomaly Detection  
+Add streaming-based AI models to detect **fraudulent consumption**, **power surges**, or **meter tampering** on-the-fly, enabling faster alerts and decision-making.
+
+---
+
+### 📊 Visualization Dashboard  
+Build a secure, responsive web dashboard for both users and utility providers to **visualize billing trends**, **blockchain logs**, and **federated model performance** in real time.
+
+---
+
+### 🔐 Post-Quantum Cryptography  
+Replace classical RSA with **quantum-resistant encryption** methods (e.g., **lattice-based cryptography**) to future-proof the system against quantum computing threats.
+
+---
+
+### 🔍 Semantic Search Capability  
+Upgrade token-based search to support **fuzzy**, **semantic**, and **multi-field queries**, enhancing accessibility and usability of encrypted datasets.
+
+---
+
+### 🌐 Cross-Utility Data Sharing  
+Implement **secure inter-grid collaboration** using **attribute-based encryption (ABE)** and **blockchain smart contracts** for controlled, verifiable energy data exchange.
+
+---
+
+By addressing these directions, the system can evolve into a comprehensive, scalable, and future-ready platform for smart grid cybersecurity and decentralized AI integration.
+
