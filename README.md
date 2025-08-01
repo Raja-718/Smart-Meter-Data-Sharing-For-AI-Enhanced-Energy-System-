@@ -286,3 +286,72 @@ Implement **secure inter-grid collaboration** using **attribute-based encryption
 
 By addressing these directions, the system can evolve into a comprehensive, scalable, and future-ready platform for smart grid cybersecurity and decentralized AI integration.
 
+
+
+
+## 📄 License
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
+This project is licensed under the **MIT License**.
+
+---
+
+MIT License
+
+Copyright (c) 2025 Engineer Raja Babu
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the “Software”), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+---
+
+🔗 *To learn more, visit the official MIT license page:* [opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)
+
+---
+---
+
+## 🙌 Thanks for Visiting!
+
+Thank you for taking the time to explore this project.  
+If you found it helpful or inspiring, please consider dropping a 🌟 — it truly means a lot!
+
+---
+
+### 💬 Let’s Connect & Collaborate
+
+I’m always open to feedback, improvements, or even just a good tech conversation! 😊
+
+- 🐛 **Found a bug?** Feel free to open an issue.  
+- 🛠️ **Have an idea?** Pull requests are always welcome.  
+- 💬 **Suggestions or thoughts?** Start a discussion!
+
+---
+
+## 📫 Contact Me
+
+📧 **Email:** [engineerrajababu@gmail.com](mailto:engineerrajababu@gmail.com)  
+🌐 **GitHub:** [@Raja-718](https://github.com/Raja-718)
+
+---
+
+### 🤝 Let’s Build Secure & Smarter Systems — Together!
+
+> _“I believe in building things that matter — securely, ethically, and openly.”_
+
+
