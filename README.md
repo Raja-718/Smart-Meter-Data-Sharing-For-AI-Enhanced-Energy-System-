@@ -345,7 +345,7 @@ I’m always open to feedback, improvements, or even just a good tech conversati
 
 ## 📫 Contact Me
 
-📧 **Email:** [engineerrajababu@gmail.com](mailto:engineerrajababu@gmail.com)  
+📧 **Email:** [rajababu147a@gmail.com)  
 🌐 **GitHub:** [@Raja-718](https://github.com/Raja-718)
 
 ---
